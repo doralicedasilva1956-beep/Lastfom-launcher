@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Identidade do Launcher -->
+    <string name="app_name">Lastfom Launcher</string>
+    <string name="welcome_title">MINECRAFT: BEDROCK EDITION</string>
+    
+    <!-- Campos de Login Offline -->
+    <string name="hint_username">Nome de Usuário (Offline)</string>
+    <string name="btn_login">Entrar em Sessão Local</string>
+    
+    <!-- Gerenciamento de APK e Jogo -->
+    <string name="btn_import_apk">Importar APK do Jogo</string>
+    <string name="status_no_apk">Nenhum APK de Minecraft selecionado</string>
+    <string name="status_apk_loaded">APK do Minecraft pronto para execução</string>
+    <string name="btn_play">JOGAR</string>
+    
+    <!-- Alertas do Sistema -->
+    <string name="error_empty_name">Por favor, digite um nome de usuário!</string>
+    <string name="error_no_apk_selected">Você precisa importar o APK do Minecraft primeiro!</string>
+    <string name="success_logged_in">Logado offline com sucesso!</string>
+</resources>
