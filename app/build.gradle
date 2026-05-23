@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.lastfom.launcher'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.lastfom.launcher"
+        minSdk 26 // Suporte ao Android 8.0 ou superior
+        targetSdk 34
+        versionCode 1
+        versionName "0.1.0" // Versão do Lastfom Launcher
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Configuração para focar na arquitetura armeabi-v7a
+    splits {
+        abi {
+            enable true
+            reset()
+            include "armeabi-v7a"
+            universalApk false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // Bibliotecas básicas necessárias para a interface do Android
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+}
